@@ -1,7 +1,18 @@
 
+
+:root{
+    --marfim: #E6DFD9;
+    --marfim-escuro: #BFB3A8;
+    --marom:#736A63;
+    --verde:#698C8C;
+    --cinza:#C7D1D9;
+    --branco-papel:#F2F2F2;
+}
+
 #logo{
     margin: 1px solid black;
 }
+
 #carouselExample{
     width: 90%;
     height: 30%;
