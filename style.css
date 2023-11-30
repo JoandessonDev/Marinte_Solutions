@@ -16,10 +16,17 @@
     --verde-02:#589A8D;
     --verde-03:#4d776f;
 }
-
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 header {
+    display: flex;
+    flex-direction: column;
     background-color: var(--marrom);
-    padding: 3px 40px;
+    width: 100%;
 }
 #logo{
     font-size: 26px;
@@ -35,9 +42,7 @@ header {
     text-shadow: 30px;
     
 }
-.nav-link:visited{
-    color: white
-}
+
 @keyframes escrevendo {
     from { width: 0; }
     to { width: 100%; }
@@ -57,7 +62,7 @@ header {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center center;
-    display: grid;
+    display: flex;
     align-items: center;
     margin: auto;
     text-align: justify;
@@ -68,37 +73,41 @@ header {
 
 
 #sobre {
-    width: 85%;
+    width: 80%;
     background: linear-gradient(var(--verde01),var(--verde-02), var(--verde-03));
-    display: grid;
-    grid-template-columns: 40% 60%;
-    align-items: center;
+    display: flex;
+    flex-direction: row;
     margin: auto;
-    text-align: justify;
     font-size: large;
     color: white;
     border-radius: 20px;
     box-shadow: black 5px 10px 15px;
+    padding: 2%;
 }
-#sobre img {
+#perfil{
+    width: 30%;
+    margin: auto;
+}
+#perfil img{
     border-radius: 50%;
     width: 300px;
     margin-left: 3em;
-}
-main img, aside {
-    max-width: 95%;
-    margin: 2em 0;
-}
-#clientes{
-    width: 85%;
     margin: auto;
-
 }
+#sobre-perfil{
+    width: 50%;
+    margin: auto;
+    
+    
+}
+
+
 #servicos{
     width: 85%;
     margin: auto;
     padding-top: 30px;
     background-color: var(--branco-papel);
+    padding-bottom: 5%;
 }
 #apresentation{
     background-color: var(--marrom);
@@ -110,17 +119,39 @@ main img, aside {
     margin-left: 7%;
     color: var(--branco-papel);
 }
-#column img{
-    margin: auto;
-}
+
 .column{
+    display: flex;
     align-items: center;
+    flex-direction: column;
     justify-content: center;
     text-align: justify;
-    max-width: 400px;
+    max-width: 375px;
     background-color: var(--branco-papel);
+    margin: auto;
+
+}
+
+.column-img{
+    margin: 20px auto;
+    
+}
+
+#clientes{
+    width: 85%;
+    margin: auto;
 
 }
 
 
 
+
+/*----------------- Mobile Configurations ----------------*/
+
+@media only screen and (max-width: 600px){
+    #sobre{
+        flex-direction: column;
+        max-height: 70vh;
+    }
+
+}
