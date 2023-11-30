@@ -2,10 +2,117 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marinete Solutions</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='/style.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet">
+    <script type="text/javascript" src="{{ url_for('static', filename='js/upload.js') }}"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Marinte Solutions</title>
 </head>
 <body>
-    <h1>Start Project</h1>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" id="top">
+        <div class="container-fluid ">
+          <span class="navbar-brand" href="#">MP Solutions</span>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Sobre</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Serviços</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contatos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Clientes</a>
+              </li>         
+            </ul>
+          </div>
+        </div>
+      </nav>
+        <head>
+
+        </head>
+        <section id="front-page">
+            <div id="carouselExample" class="carousel slide text-center">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="/img/banner_blog_epi_3m1-1140x350.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/img/img01.png" class="d-block w-100" alt="...">
+                  </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+        </section>
+    </header>
+    <main>
+                    
+      <div id="apresentation">
+        <h1>Seja Bem Vindo!</h1>
+      </div>
+      <div class="container">
+        <div class="row">
+          <!-- Coluna 1 -->
+          <div class="col-md-4">
+            <h2>Coluna 1</h2>
+            <img src="/img/imgpqn.jpg" alt="" style="width: 250px">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta suscipit cum voluptatem sint possimus unde aperiam dolorem, fugiat saepe magni ratione impedit, consectetur maxime in odit! Doloribus minus vitae neque?</p>
+            p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, voluptatibus ratione qui facere a nostrum corrupti saepe quam minima accusantium aliquid ab, sint commodi nobis quia. Vitae aspernatur harum atque?</p>
+          </div>
+          
+          <!-- Coluna 2 -->
+          <div class="col-md-4">
+            <h2>Coluna 2</h2>
+            <img src="/img/imgpqn.jpg" alt="" style="width: 250px">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, voluptatibus ratione qui facere a nostrum corrupti saepe quam minima accusantium aliquid ab, sint commodi nobis quia. Vitae aspernatur harum atque?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, voluptatibus ratione qui facere a nostrum corrupti saepe quam minima accusantium aliquid ab, sint commodi nobis quia. Vitae aspernatur harum atque?</p>
+          </div>
+          
+          <!-- Coluna 3 -->
+          <div class="col-md-4">
+            <h2>Coluna 3</h2>
+            <img src="/img/imgpqn.jpg" alt="" style="width: 250px">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum itaque quis pariatur nihil impedit ratione illo facilis asperiores saepe atque obcaecati enim, tenetur libero voluptas qui cum, hic rem exercitationem?.</p>
+            p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, voluptatibus ratione qui facere a nostrum corrupti saepe quam minima accusantium aliquid ab, sint commodi nobis quia. Vitae aspernatur harum atque?</p>
+          </div>
+        </div>
+      </div>
+      
+
+    </main>
+    <footer>
+
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
 </body>
 </html>
+
