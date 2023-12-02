@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ url_for('static', filename='/style.css') }}">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet">
-    <script type="text/javascript" src="{{ url_for('static', filename='js/upload.js') }}"></script>
-    <link rel="stylesheet" href="style.css">
-    <title>Marinte Solutions</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ url_for('static', filename='/style.css') }}">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet">
+  <script type="text/javascript" src="{{ url_for('static', filename='js/upload.js') }}"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Marinte Solutions</title>
 </head>
+
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
       <div class="container-fluid">
         <span id="logo" href="#">MP Solutions</span>
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -40,7 +42,7 @@
 
       <section id="sobre">
         <div id="perfil">
-            <img src="./img/perfil.png" alt="Foto dela">
+          <img src="./img/perfil.png" alt="Foto dela">
         </div>
         <div id="sobre-perfil">
           <h1 class="efeito-escrevendo">Seja Bem Vindo!</h1>
@@ -51,88 +53,153 @@
             elit. Non consequuntur impedit quos, dolores fugit aut obcaecati, repellat
             qui veritatis, eum natus consequatur vero aliquam cumque officiis. Aut, dolore.
             Excepturi, ex?</p>
-          </div>
+        </div>
       </section>
-</header>
-<main>
-     
+  </header>
+  <main>
 
-      </section>      
-        <section id="servicos">
-          <div id="apresentation">
-            <h1>Nossos Serviços</h1>
+
+    </section>
+    <section id="servicos">
+      <div id="apresentation">
+        <h1>Nossos Serviços</h1>
+      </div>
+      <div class="container">
+        <div class="row">
+          <!-- Coluna 1 -->
+          <div class="col-md-4 column">
+            <h2>Coluna 1</h2>
+            <img src="/img/imgpqn.jpg" alt="" style="width: 250px" class="service-img">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta suscipit cum voluptatem sint possimus
+              unde aperiam dolorem, fugiat saepe magni ratione impedit, consectetur maxime in odit! Doloribus minus
+              vitae neque?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, voluptatibus ratione qui facere a nostrum
+              corrupti saepe quam minima accusantium aliquid ab, sint commodi nobis quia. Vitae aspernatur harum atque?
+            </p>
           </div>
-          <div class="container">
-            <div class="row">
-              <!-- Coluna 1 -->
-              <div class="col-md-4 column">
-                <h2>Coluna 1</h2>
-                <img src="/img/imgpqn.jpg" alt="" style="width: 250px" class="service-img">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta suscipit cum voluptatem sint possimus unde aperiam dolorem, fugiat saepe magni ratione impedit, consectetur maxime in odit! Doloribus minus vitae neque?</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, voluptatibus ratione qui facere a nostrum corrupti saepe quam minima accusantium aliquid ab, sint commodi nobis quia. Vitae aspernatur harum atque?</p>
-              </div>
 
-              <!-- Coluna 2 -->
-              <div class="col-md-4 column">
-                <h2>Coluna 2</h2>
-                <img src="/img/imgpqn.jpg" alt="" style="width: 250px"  class="service-img">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, voluptatibus ratione qui facere a nostrum corrupti saepe quam minima accusantium aliquid ab, sint commodi nobis quia. Vitae aspernatur harum atque?</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, voluptatibus ratione qui facere a nostrum corrupti saepe quam minima accusantium aliquid ab, sint commodi nobis quia. Vitae aspernatur harum atque?</p>
-              </div>
-
-              <!-- Coluna 3 -->
-              <div class="col-md-4 column">
-                <h2>Coluna 3</h2>
-                <img src="/img/imgpqn.jpg" alt="" style="width: 250px" class="service-img">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum itaque quis pariatur nihil impedit ratione illo facilis asperiores saepe atque obcaecati enim, tenetur libero voluptas qui cum, hic rem exercitationem?.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, voluptatibus ratione qui facere a nostrum corrupti saepe quam minima accusantium aliquid ab, sint commodi nobis quia. Vitae aspernatur harum atque?</p>
-
-              </div>
-            </div>
+          <!-- Coluna 2 -->
+          <div class="col-md-4 column">
+            <h2>Coluna 2</h2>
+            <img src="/img/imgpqn.jpg" alt="" style="width: 250px" class="service-img">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, voluptatibus ratione qui facere a nostrum
+              corrupti saepe quam minima accusantium aliquid ab, sint commodi nobis quia. Vitae aspernatur harum atque?
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, voluptatibus ratione qui facere a nostrum
+              corrupti saepe quam minima accusantium aliquid ab, sint commodi nobis quia. Vitae aspernatur harum atque?
+            </p>
           </div>
-        </section>
 
-        <section id="clientes">
-          <div id="carouselExample" class="carousel slide text-center">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="/img/img-service01.png" class="d-block w-100 img-fluid" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="/img/img-service02.png" class="d-block w-100 active img-fluid" alt="...">
-              </div>
-              <div class="carousel-item ">
-                <img src="/img/img-service03.png" class="d-block w-100 img-fluid" alt="...">
-              </div>            
-            
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
+          <!-- Coluna 3 -->
+          <div class="col-md-4 column">
+            <h2>Coluna 3</h2>
+            <img src="/img/imgpqn.jpg" alt="" style="width: 250px" class="service-img">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum itaque quis pariatur nihil impedit
+              ratione illo facilis asperiores saepe atque obcaecati enim, tenetur libero voluptas qui cum, hic rem
+              exercitationem?.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, voluptatibus ratione qui facere a nostrum
+              corrupti saepe quam minima accusantium aliquid ab, sint commodi nobis quia. Vitae aspernatur harum atque?
+            </p>
+
           </div>
-        </section> 
-</main>   
-    <footer>
+        </div>
+      </div>
+    </section>
 
-    </footer>
+    <section id="clientes">
+      <div id="carouselExample" class="carousel slide text-center">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/img/img-service01.png" class="d-block w-100 img-fluid" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="/img/img-service02.png" class="d-block w-100 active img-fluid" alt="...">
+          </div>
+          <div class="carousel-item ">
+            <img src="/img/img-service03.png" class="d-block w-100 img-fluid" alt="...">
+          </div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!--Gabryel  alves -->
+    <section id="contatos">
+      <div id="localizacao">
+        <h1>Localização</h1>
+        <p>Rua F 556 Uniao Parauapebas PA 68515-000 </p>
+        <h1>Siga-nos</h1>
+        <ul>
+          <li><i class="bi bi-envelope-at icons"></i></li>
+          <li><i class="bi bi-whatsapp icons"></i></li>
+          <li><i class="bi bi-linkedin icons"></i></li>
+          <li><i class="bi bi-instagram icons"></i></li>
+          <li><i class="bi bi-facebook icons"></i></li>
+        </ul>
+        <p>&copy; MP Solutions - Todos os direitos reservados - 2023</p>
+      </div>
+      <div id="formulario">
+        <h1>Formulário de Contato</h1>
+        <form>
+          <input type="text" placeholder="Seu nome" required />
+          <input type="email" placeholder="Seu email" required />
+          <input type="tel" placeholder="Seu telefone (opcional)" />
+          <textarea placeholder="Sua mensagem" required></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+
+      <!-- <div>
+        <h2>Entre em Contato</h2>
+        <h3>Nos acompanhe</h3>
+        <ul class="social-contact">
+          <li>
+            <i class="bi bi-envelope-at-fill icons"></i>
+          </li>
+          <li>
+            <i class="bi bi-whatsapp icons"></i>
+          </li>
+          <i class="bi bi-linkedin icons"></i>
+          <li>
+            <i class="bi bi-instagram icons"></i>
+          </li>
+          <li>
+            <i class="bi bi-facebook icons"></i>
+          </li>
+        </ul>
+      </div> -->
+    </section>
+  </main>
+  <footer>
+
+  </footer>
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
+
+  <!-- Popper.js -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
     integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
     crossorigin="anonymous"></script>
+
+  <!-- Bootstrap JS -->
   <script src="bootstrap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
-    <script src="./main.js"></script>
 
+  <!-- scripts personalizados -->
+  <script src="./main.js"></script>
 </body>
-</html>
 
+</html>
