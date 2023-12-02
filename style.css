@@ -169,7 +169,13 @@ main{
     margin: 20px auto;
     
 }
-
+.subtitulo{
+    color: #452C00;
+    font-weight: 600;
+}
+.paragrafo{
+    font-size: 18px;
+}
 
 
 
