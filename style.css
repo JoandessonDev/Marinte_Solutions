@@ -117,7 +117,14 @@ main{
     font-size: 50px;
   }
 
+.row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 35px;
 
+}
 #servicos{
     padding-top: 30px;
     background-color: var(--branco-papel);
@@ -129,9 +136,10 @@ main{
 }
 
 #apresentation{
-    background-color: var(--marrom);
+    background-color: var(--marrom-forte);
     width: 60%;
     padding: 0.5%;
+    margin-top: 40px;
     margin-bottom: 40px;
     box-shadow: black 4px 4px ;
 
@@ -179,11 +187,50 @@ main{
     text-align: center;
 }
 .paragrafo{
-    font-size: 18px;
+    font-size: 21px;
+    text-align: justify;
+}
+#carousel{
+    background-color: #452c00;
+    height: 340px;
+    overflow: hidden;
+
+}
+#carouselExample{
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    
+}
+#apresentation2{
+    background-color: var(--verde-03);
+    width: 60%;
+    padding: 0.5%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    box-shadow: black 4px 4px ;
+    color: white;
+
+}
+#vantagens{
+    padding-top: 20px;
+    width: 85%;
+    
+}
+#p-vantagens{
+
+    margin-left: 40px;
 }
 
 
-
+#list{
+    font-size: 21px;
+    margin-left: 30px;
+    border-bottom: var(--marrom-forte) 1px 1px;
+}
+#list li{
+    font-size: 21px;padding: 5px;
+}
 
 
 /*----------------- Mobile Configurations ----------------*/
