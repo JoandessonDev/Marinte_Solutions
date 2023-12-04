@@ -55,7 +55,7 @@ main {
 
 }
 
-#introduction {
+.introduction {
     height: 100vh;
     width: 100%;
     background-image: url('/img/fundo-capa.jpg');
@@ -101,8 +101,6 @@ main {
 #sobre-perfil {
     width: 50%;
     margin: auto;
-
-
 }
 
 
@@ -168,10 +166,25 @@ main {
 }
 
 #contatos {
-    display: inline-flex;
+    /* display: inline-flex;
     padding: 2em;
     background-color: var(--marrom);
+    color: white; */
+    width: 80%;
+    background: linear-gradient(var(--verde01), var(--verde-02), var(--verde-03));
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    font-size: large;
     color: white;
+    border-radius: 20px;
+    box-shadow: black 5px 10px 15px;
+    padding: 2%;
+}
+
+
+#licalizacao {
+    margin: 0 auto;
 }
 
 #localizacao ul {
@@ -197,6 +210,7 @@ main {
     display: block;
     text-align: center;
     margin: 0 auto;
+    width: 50%;
 }
 
 #formulario input,
@@ -205,6 +219,8 @@ main {
     margin-bottom: 1.2em;
     width: 100%;
     padding: 0.3em;
+    resize: none;
+    border-radius: 1em;
 }
 
 #formulario button {
@@ -213,7 +229,7 @@ main {
     border: none;
     cursor: pointer;
     border: solid 1px rgba(0, 0, 0, 0.349);
-
+    border-radius: 1em;
 }
 
 #formulario button:hover {
