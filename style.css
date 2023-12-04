@@ -123,6 +123,10 @@ main{
     background-color: var(--branco-papel);
     padding-bottom: 5%;
 }
+.service-img{
+    border-radius: 15px;
+    margin: 30px auto;
+}
 
 #apresentation{
     background-color: var(--marrom);
@@ -172,6 +176,7 @@ main{
 .subtitulo{
     color: #452C00;
     font-weight: 600;
+    text-align: center;
 }
 .paragrafo{
     font-size: 18px;
