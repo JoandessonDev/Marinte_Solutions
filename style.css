@@ -43,13 +43,15 @@ footer{
     width: 100%;
 }
 nav{
+    display: flex;
     justify-content: center;
     align-items: center;
     margin: 5px auto; 
 }
 #logo{
     width: 200px;
-
+    margin-left: -100px;
+    padding-right: 60px;
 
 }
 
@@ -79,6 +81,7 @@ nav{
     margin:  auto;
     text-align: justify;
     font-size: large;
+    border-left: #452c00 15px 15px;
 
 }
 
@@ -211,7 +214,7 @@ nav{
     
 }
 #apresentation2{
-    background-color: var(--verde-03);
+    background-color: var(--verde01);
     width: 60%;
     padding: 0.5%;
     margin-top: 40px;
