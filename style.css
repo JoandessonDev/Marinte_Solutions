@@ -29,7 +29,7 @@ body{
 header {
     display: flex;
     flex-direction: column;
-    background-color: var(--verde01);
+    background-color: #75d5c2;
     width: 100%;
     
 }
@@ -45,36 +45,38 @@ footer{
 nav{
     justify-content: center;
     align-items: center;
-    margin: auto;
+    margin: 5px auto; 
 }
 #logo{
-    width: 225px;
-    margin: 0 25%;  
+    width: 200px;
+
+
 }
 
 .nav-link{
     color: white;
-    border-radius: 20%;
     font-size: 25px;
-    margin: 10px;
+    margin: 0 10px;
 }
 .nav-link:hover{
     color: var(--marrom-forte);
     text-shadow: 30px;
     
 }
-
+.container-fluid{
+    display: flex;
+}
 .introduction{
-    height: 80vh;
+    height: 90vh;
     width: 100%;
-    background-color:var(--verde01);
+    background-image: url("/img/img1\ \(2\).jpg");
     background-size: cover; /* Cobrir toda a área do elemento */
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center center;
     display: flex;
     align-items: center;
-    margin: auto;
+    margin:  auto;
     text-align: justify;
     font-size: large;
 
@@ -82,12 +84,12 @@ nav{
 
 
 #sobre {
-    width: 85%;
+    width: 80%;
     height: 500px;
     background-color: var(--branco-papel);
     display: flex;
     flex-direction: row;
-    margin: auto;
+    margin: 0 auto;
     font-size: large;
     color: var(--marrom-forte);
     box-shadow: black 5px 10px 15px;
