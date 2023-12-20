@@ -29,13 +29,11 @@ body{
 header {
     display: flex;
     flex-direction: column;
-    background-color: black;
+    background-color: var(--verde01);
     width: 100%;
     
 }
-header nav{
-    box-shadow: black 4px 4px 20px;
-}
+
 main{
     display: flex;
     flex-direction: column;
@@ -44,26 +42,32 @@ main{
 footer{
     width: 100%;
 }
-#logo{
-    font-size: 26px;
-    margin: 0 15px;
-    color: white;
+nav{
+    justify-content: center;
+    align-items: center;
+    margin: auto;
 }
+#logo{
+    width: 225px;
+    margin: 0 25%;  
+}
+
 .nav-link{
     color: white;
     border-radius: 20%;
-    font-size: 20px;
+    font-size: 25px;
+    margin: 10px;
 }
 .nav-link:hover{
-    color: #D18400;
+    color: var(--marrom-forte);
     text-shadow: 30px;
     
 }
 
 .introduction{
-    height: 100vh;
+    height: 80vh;
     width: 100%;
-    background-image: url('/img/fundo-capa.jpg');
+    background-color:var(--verde01);
     background-size: cover; /* Cobrir toda a área do elemento */
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -73,22 +77,20 @@ footer{
     margin: auto;
     text-align: justify;
     font-size: large;
-    color: white
 
 }
 
 
 #sobre {
-    width: 80%;
-    background: linear-gradient(var(--verde01), var(--verde-02), var(--verde-03));
+    width: 85%;
+    height: 500px;
+    background-color: var(--branco-papel);
     display: flex;
     flex-direction: row;
     margin: auto;
     font-size: large;
-    color: white;
-    border-radius: 20px;
+    color: var(--marrom-forte);
     box-shadow: black 5px 10px 15px;
-    padding: 2%;
 }
 #perfil{
     width: 30%;
@@ -118,6 +120,7 @@ footer{
     white-space: nowrap; /* Para garantir que o texto não quebre para a próxima linha */
     animation: escrevendo 3s steps(60) infinite alternate; /* Ajuste a duração conforme necessário */
     font-size: 50px;
+    color: var(--marrom-forte);
   }
 
 .row{
