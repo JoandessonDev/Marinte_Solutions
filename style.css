@@ -17,7 +17,7 @@
     --verde00:#75d5c2;
     --verde01:#63b6a5;
     --verde-02:#589A8D;
-    --verde-03:#4d776f;
+    --verde-03: #015958;
 }
 
 body{
@@ -29,7 +29,7 @@ body{
 header {
     display: flex;
     flex-direction: column;
-    background-color: #015958;
+    background-color: var(--verde-03);
     width: 100%;
     
 }
@@ -49,7 +49,8 @@ nav{
     margin: 5px auto; 
 }
 #logo{
-    width: 200px;
+    width: 250px;
+    height: 10vh;
     margin-left: -100px;
     padding-right: 60px;
 
@@ -87,7 +88,7 @@ nav{
 
 
 #sobre {
-    width: 80%;
+    width: 70%;
     height: 500px;
     background-color: var(--branco-papel);
     display: flex;
@@ -103,7 +104,7 @@ nav{
 }
 #perfil img{
     border-radius: 50%;
-    width: 300px;
+    width: 400px;
     margin-left: 3em;
     margin: auto;
 }
@@ -140,13 +141,15 @@ nav{
     background-color: var(--branco-papel);
     padding-bottom: 5%;
 }
-.service-img{
-    border-radius: 15px;
-    margin: 30px auto;
-}
 
+#scope-service img{
+        width: 275px;
+        height: 375px;
+        border-radius: 15px;
+
+}
 #apresentation{
-    background-color: var(--marrom-forte);
+    background-color: var(--verde-03);
     width: 60%;
     padding: 0.5%;
     margin-top: 40px;
@@ -160,13 +163,14 @@ nav{
 }
 
 #intro-services{
-    width: 75%;
+    width: 65%;
     background-color:white;
     padding: 30px;
     margin-left: 5%;
+    margin-right: 30px;
     margin-bottom: 40px;
     box-shadow: var(--marfim-escuro) 6px 6px;
-    font-size: 1.33rem;
+    font-size: 1.22rem;
     text-align: justify;
     
 }
@@ -206,14 +210,9 @@ nav{
     overflow: hidden;
 
 }
-#carouselExample{
-    width: 90%;
-    margin: auto;
-    overflow: hidden;
-    
-}
+
 #apresentation2{
-    background-color: var(--verde01);
+    background-color: var(--verde-03);
     width: 60%;
     padding: 0.5%;
     margin-top: 40px;
@@ -221,6 +220,9 @@ nav{
     box-shadow: black 4px 4px ;
     color: white;
 
+}
+#apresentation2 h1{
+    margin-left: 30px;
 }
 #vantagens{
     padding-top: 20px;
@@ -230,6 +232,11 @@ nav{
 #p-vantagens{
 
     margin-left: 40px;
+}
+#img-pq{
+    position: absolute;
+    width: 375px;
+    margin-left: 45%;
 }
 
 
