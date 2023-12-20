@@ -29,7 +29,7 @@ body{
 header {
     display: flex;
     flex-direction: column;
-    background-color: #75d5c2;
+    background-color: #015958;
     width: 100%;
     
 }
@@ -71,7 +71,7 @@ nav{
 .introduction{
     height: 90vh;
     width: 100%;
-    background-image: url("/img/img1\ \(2\).jpg");
+    background-image: url("/img/fundo-introduction.jpg");
     background-size: cover; /* Cobrir toda a área do elemento */
     background-repeat: no-repeat;
     background-attachment: fixed;
