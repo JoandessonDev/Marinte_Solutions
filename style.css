@@ -17,7 +17,7 @@
     --verde00:#75d5c2;
     --verde01:#63b6a5;
     --verde-02:#589A8D;
-    --verde-03:#4d776f;
+    --verde-03: #015958;
 }
 
 body{
@@ -29,13 +29,11 @@ body{
 header {
     display: flex;
     flex-direction: column;
-    background-color: black;
+    background-color: var(--verde-03);
     width: 100%;
     
 }
-header nav{
-    box-shadow: black 4px 4px 20px;
-}
+
 main{
     display: flex;
     flex-direction: column;
@@ -44,51 +42,61 @@ main{
 footer{
     width: 100%;
 }
-#logo{
-    font-size: 26px;
-    margin: 0 15px;
-    color: white;
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px auto; 
 }
+#logo{
+    width: 250px;
+    height: 10vh;
+    margin-left: -100px;
+    padding-right: 60px;
+
+}
+
 .nav-link{
     color: white;
-    border-radius: 20%;
-    font-size: 20px;
+    font-size: 25px;
+    margin: 0 10px;
 }
 .nav-link:hover{
-    color: #D18400;
+    color: var(--marrom-forte);
     text-shadow: 30px;
     
 }
-
+.container-fluid{
+    display: flex;
+}
 .introduction{
-    height: 100vh;
+    height: 90vh;
     width: 100%;
-    background-image: url('/img/fundo-capa.jpg');
+    background-image: url("/img/fundo-introduction.jpg");
     background-size: cover; /* Cobrir toda a área do elemento */
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center center;
     display: flex;
     align-items: center;
-    margin: auto;
+    margin:  auto;
     text-align: justify;
     font-size: large;
-    color: white
+    border-left: #452c00 15px 15px;
 
 }
 
 
 #sobre {
-    width: 80%;
-    background: linear-gradient(var(--verde01), var(--verde-02), var(--verde-03));
+    width: 70%;
+    height: 500px;
+    background-color: var(--branco-papel);
     display: flex;
     flex-direction: row;
-    margin: auto;
+    margin: 0 auto;
     font-size: large;
-    color: white;
-    border-radius: 20px;
+    color: var(--marrom-forte);
     box-shadow: black 5px 10px 15px;
-    padding: 2%;
 }
 #perfil{
     width: 30%;
@@ -96,15 +104,14 @@ footer{
 }
 #perfil img{
     border-radius: 50%;
-    width: 300px;
+    width: 400px;
     margin-left: 3em;
     margin: auto;
 }
 #sobre-perfil{
     width: 50%;
     margin: auto;
-    
-    
+    background-image: url("/img/m5.png");
 }
 
 
@@ -118,6 +125,7 @@ footer{
     white-space: nowrap; /* Para garantir que o texto não quebre para a próxima linha */
     animation: escrevendo 3s steps(60) infinite alternate; /* Ajuste a duração conforme necessário */
     font-size: 50px;
+    color: var(--marrom-forte);
   }
 
 .row{
@@ -133,13 +141,15 @@ footer{
     background-color: var(--branco-papel);
     padding-bottom: 5%;
 }
-.service-img{
-    border-radius: 15px;
-    margin: 30px auto;
-}
 
+#scope-service img{
+        width: 275px;
+        height: 375px;
+        border-radius: 15px;
+
+}
 #apresentation{
-    background-color: var(--marrom-forte);
+    background-color: var(--verde-03);
     width: 60%;
     padding: 0.5%;
     margin-top: 40px;
@@ -153,13 +163,14 @@ footer{
 }
 
 #intro-services{
-    width: 75%;
+    width: 65%;
     background-color:white;
     padding: 30px;
     margin-left: 5%;
+    margin-right: 30px;
     margin-bottom: 40px;
     box-shadow: var(--marfim-escuro) 6px 6px;
-    font-size: 1.33rem;
+    font-size: 1.22rem;
     text-align: justify;
     
 }
@@ -199,12 +210,7 @@ footer{
     overflow: hidden;
 
 }
-#carouselExample{
-    width: 90%;
-    margin: auto;
-    overflow: hidden;
-    
-}
+
 #apresentation2{
     background-color: var(--verde-03);
     width: 60%;
@@ -215,6 +221,9 @@ footer{
     color: white;
 
 }
+#apresentation2 h1{
+    margin-left: 30px;
+}
 #vantagens{
     padding-top: 20px;
     width: 85%;
@@ -224,11 +233,18 @@ footer{
 
     margin-left: 40px;
 }
+#img-pq{
+    position: absolute;
+    width: 375px;
+    margin-left: 48%;
+
+}
 
 
 #list{
     font-size: 21px;
     margin-left: 30px;
+    padding-bottom: 30px;
     border-bottom: var(--marrom-forte) 1px 1px;
 }
 #list li{
