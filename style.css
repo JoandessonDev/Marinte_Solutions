@@ -64,7 +64,7 @@ nav{
 .nav-link:hover{
     color: var(--marrom-forte);
     text-shadow: 30px;
-    
+        
 }
 .container-fluid{
     display: flex;
@@ -109,6 +109,7 @@ nav{
     margin: auto;
 }
 #sobre-perfil{
+#sobre-perfil{
     width: 50%;
     margin: auto;
     background-image: url("/img/m5.png");
@@ -120,6 +121,10 @@ nav{
     to { width: 100%; }
   }
 
+  .efeito-escrevendo {
+    overflow: hidden; /* Para ocultar o texto extra enquanto escreve */
+    white-space: nowrap; /* Para garantir que o texto não quebre para a próxima linha */
+    animation: escrevendo 3s steps(60) infinite alternate; /* Ajuste a duração conforme necessário */
   .efeito-escrevendo {
     overflow: hidden; /* Para ocultar o texto extra enquanto escreve */
     white-space: nowrap; /* Para garantir que o texto não quebre para a próxima linha */
@@ -230,7 +235,6 @@ nav{
     
 }
 #p-vantagens{
-
     margin-left: 40px;
 }
 #img-pq{
@@ -252,10 +256,6 @@ nav{
 }
 
 #contatos {
-    /* display: inline-flex;
-    padding: 2em;
-    background-color: var(--marrom);
-    color: white; */
     width: 80%;
     background: linear-gradient(var(--verde01), var(--verde-02), var(--verde-03));
     display: flex;
@@ -263,8 +263,7 @@ nav{
     margin: auto;
     font-size: large;
     color: white;
-    border-radius: 20px;
-    box-shadow: black 5px 10px 15px;
+    border-radius: 2px;
     padding: 2%;
 }
 
@@ -283,39 +282,40 @@ nav{
     margin-right: 1em;
 }
 
-#localizacao p {
+/* #localizacao p {
     margin-top: 3em;
     margin-bottom: 3em;
-}
+} */
 
 .icons {
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 #formulario {
     display: block;
     text-align: center;
-    margin: 0 auto;
-    width: 50%;
+    margin: auto;
+    width: 30%;
 }
 
 #formulario input,
 #formulario textarea {
     display: block;
-    margin-bottom: 1.2em;
+    margin-bottom: 1em;
     width: 100%;
-    padding: 0.3em;
+    padding: 0.2em;
     resize: none;
-    border-radius: 1em;
+    border-radius: 0.5em;
+    border: none;
 }
 
 #formulario button {
     display: block;
-    padding: 0.5em 1.5em;
+    padding: 0.2em 1em;
     border: none;
     cursor: pointer;
     border: solid 1px rgba(0, 0, 0, 0.349);
-    border-radius: 1em;
+    border-radius: 0.5em;
 }
 
 #formulario button:hover {
@@ -326,6 +326,8 @@ nav{
 
 /*----------------- Mobile Configurations ----------------*/
 
+@media only screen and (max-width: 600px){
+    #sobre{
 @media only screen and (max-width: 600px){
     #sobre{
         flex-direction: column;
