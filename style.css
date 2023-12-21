@@ -89,12 +89,11 @@ nav{
 
 #sobre {
     width: 70%;
-    height: 500px;
+    height: 400px;
     background-color: var(--branco-papel);
     display: flex;
     flex-direction: row;
     margin: 0 auto;
-    font-size: large;
     color: var(--marrom-forte);
     box-shadow: black 5px 10px 15px;
 }
@@ -104,7 +103,7 @@ nav{
 }
 #perfil img{
     border-radius: 50%;
-    width: 400px;
+    width: 300px;
     margin-left: 3em;
     margin: auto;
 }
