@@ -236,13 +236,15 @@ nav{
 #img-pq{
     position: absolute;
     width: 375px;
-    margin-left: 45%;
+    margin-left: 48%;
+
 }
 
 
 #list{
     font-size: 21px;
     margin-left: 30px;
+    padding-bottom: 30px;
     border-bottom: var(--marrom-forte) 1px 1px;
 }
 #list li{
