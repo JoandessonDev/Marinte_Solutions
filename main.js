@@ -11,3 +11,19 @@ $(document).ready(function() {
     });
 });
 
+
+const myobserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('aparecer-animar');
+        } else {
+            entry.target.classList.remove('aparecer-animar');
+        }
+    });
+});
+
+const contatos = $('.animar');
+
+contatos.each(function() {
+    myobserver.observe(this);
+});
