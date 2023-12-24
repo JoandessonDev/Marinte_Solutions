@@ -42,12 +42,7 @@ main{
 footer{
     width: 100%;
 }
-nav{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 5px auto; 
-}
+
 #logo{
     width: 250px;
     height: 10vh;
@@ -326,6 +321,13 @@ nav{
 /*----------------- Mobile Configurations ----------------*/
 
 @media only screen and (max-width: 600px){
+    header{
+        display: flex;
+    }
+    nav{
+        width: 50%;
+        display: flex;
+    }
     #sobre{
         flex-direction: column;
         max-height: 70vh;
