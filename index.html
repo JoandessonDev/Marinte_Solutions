@@ -10,7 +10,7 @@
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap">
-  <script type="text/javascript" src="{{ url_for('static', filename='js/upload.js') }}"></script>
+  <!-- <script type="text/javascript" src="{{ url_for('static', filename='js/upload.js') }}"></script> -->
   <link rel="stylesheet" href="style.css">
   <title>Marinte Solutions</title>
 </head>
@@ -47,7 +47,11 @@
         </div>
         <div id="sobre-perfil">
           <h1 class="efeito-escrevendo">Seja Bem Vindo!</h1>
-          <p>Com um projeto pessoal inspirador, busco compartilhar não apenas meu conhecimento, mas também minha paixão por um ambiente laboral seguro. Oferecendo treinamentos fundamentados em experiências práticas e informações valiosas que acumulei ao longo do tempo, meu objetivo é capacitar equipes para um futuro mais seguro e saudável. Junte-se a mim nessa jornada em prol da segurança, onde o conhecimento se torna a base para ambientes de trabalho mais protegidos e produtivos.</p>
+          <p>Com um projeto pessoal inspirador, busco compartilhar não apenas meu conhecimento, mas também minha paixão
+            por um ambiente laboral seguro. Oferecendo treinamentos fundamentados em experiências práticas e informações
+            valiosas que acumulei ao longo do tempo, meu objetivo é capacitar equipes para um futuro mais seguro e
+            saudável. Junte-se a mim nessa jornada em prol da segurança, onde o conhecimento se torna a base para
+            ambientes de trabalho mais protegidos e produtivos.</p>
         </div>
       </section>
   </header>
@@ -166,32 +170,34 @@
 
   </main>
   <footer>
-      <section id="contatos">
-        <div class="imagem-container animar">
-          <img src="./img/avatar-ela-cotact.png" alt="ela">
-        </div>
-        <div id="formulario" class="animar">
-          <form>
-            <input type="text" placeholder="Seu nome" required />
-            <input type="email" placeholder="Seu email" required />
-            <input type="tel" placeholder="Seu telefone (opcional)" />
-            <textarea placeholder="Sua mensagem" required></textarea>
-            <button type="submit">Enviar</button>
-          </form>
-        </div>
-        <div id="localizacao" class="animar">
-          <h1>Entre em contato:</h1>
-          <ul>
-            <!-- <li><i class="bi bi-envelope icons"></i></i></li> -->
-            <li><i class="bi bi-whatsapp icons"></i></li>
-            <li><i class="bi bi-linkedin icons"></i></li>
-            <li><i class="bi bi-instagram icons"></i></li>
-            <li><i class="bi bi-facebook icons"></i></li>
-          </ul>
-          <p><i class="bi bi-geo-alt"></i> Rua F 556 Uniao Parauapebas PA 68515-000 </p>
-        </div>
-      </section>
-      <p>&copy; MP Solutions - Todos os direitos reservados - 2023</p>
+    <section id="contatos">
+      <div class="imagem-container animar">
+        <img src="./img/avatar-ela-cotact.png" alt="ela">
+      </div>
+      <div id="formulario" class="animar">
+        <form>
+          <input type="text" placeholder="Seu nome" required />
+          <input type="email" placeholder="Seu email" required />
+          <input type="tel" id="telefone" placeholder="Seu telefone (opcional)" />
+          <textarea placeholder="Sua mensagem" required></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+      <div id="localizacao" class="animar">
+        <h1>Entre em contato:</h1>
+        <ul>
+          <!-- <li><i class="bi bi-envelope icons"></i></i></li> -->
+          <li><a href="https://web.whatsapp.com"><i class="bi bi-whatsapp icons"></i></a></li>
+          <li><a href="https://www.linkedin.com"><i class="bi bi-linkedin icons"></i></a></li>
+          <li><a href="https://www.instagram.com"><i class="bi bi-instagram icons"></i></a></li>
+          <li><a href="https://www.facebook.com"><i class="bi bi-facebook icons"></i></a></li>
+        </ul>
+        <a href="https://maps.app.goo.gl/CYdAvgx8TWFnfgYS7">
+          <p><i class="bi bi-geo-alt"></i> Rua F, Uniao Parauapebas PA 68515-000 </p>
+        </a>
+      </div>
+    </section>
+    <p>&copy; MP Solutions - Todos os direitos reservados - 2023</p>
   </footer>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
