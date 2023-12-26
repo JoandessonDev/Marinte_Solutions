@@ -222,8 +222,8 @@ footer{
     text-align: justify;
 }
 #carousel{
-    background-color: #452c00;
-    height: 340px;
+    background-color: #015958;
+    height: 45vh;
     overflow: hidden;
 
 }
@@ -265,7 +265,8 @@ footer{
 }
 
 #list li{
-    font-size: 21px;padding: 5px;
+    font-size: 21px;
+    padding: 5px;
 }
 
 #contatos {
@@ -389,6 +390,11 @@ footer{
     color: #fff;
 }
 
+#carouserl{
+    height: 10vh;
+    width: 100vh;
+}
+
 /* efeitos da sessão contatos */
 .animar {
     opacity: 0;
@@ -443,27 +449,115 @@ footer{
 /*----------------- Mobile Configurations ----------------*/
 
 @media only screen and (max-width: 700px){
-    body{
-        overflow-x: hidden;
-    }
+
 
     #sobre{
         display: flex;
         flex-direction: column;
         width: 80%;
-        height: 70vh;
+        height: 65vh;
     }
     #sobre-perfil{
+        margin-top: 0px;
         flex-direction: row;
         overflow: hidden;
+        width: 80%;
+        
 
+    }
+
+    #sobre-perfil p {
+        font-size: 0.9rem;
     }
 
     #perfil{
-        width: 150px;
+        margin-top: 12%;
+        width: 140px;
         border-radius: 50%;
+        margin-bottom: 0px;
     }
     
+    .efeito-escrevendo{
+        margin-top: 12%;
+        font-size: 25px;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    .column{
+
+        margin-bottom: 10%;
+    }
+
+    #servicos {
+        padding-top: 0px;
+
+    }
+
+    #intro-services{
+        width: 90%;
+        background-color:white;
+        margin-left: 5%;
+        margin-right: 30px;
+        margin-bottom: 40px;
+        box-shadow: var(--marfim-escuro) 6px 6px;
+        font-size: small;
+        text-align: justify;
+        
+    }
+    #citacao {
+        font-size: 1rem;    
+    }
+
+    .service-img{
+        width: 70%;
+        margin-bottom: 5%;
+    }
+
+    .container p{
+        width: 90%;
+        font-size: small;
+    }
+    .subtitulo{
+        font-size: large;
+    }
+
+    #carousel {
+        height: 18vh;
+    }
+
+    #vantagens{
+        margin: auto;
+        padding-top: 0;
+    }
+
+    #p-vantagens{
+        font-size: small;
+        margin: 0;
+        
+    }
+    .h-android{
+        font-size: 1.2rem;
+    }
+
+    #list{
+        width: 90%;
+        margin: 0;
+        padding: 5%;
+    }
+
+    #list li{
+        font-size: small;
+        margin: 0;
+    }
+
+    #img-pq{
+        margin-top: 30%;
+        margin-left: 50%;
+        width: 37%;
+    }
 
 
     /* configuração do menu lateral */
@@ -472,8 +566,8 @@ footer{
         top: 8vh;
         right: 0;
         width: 40vw;
-        height: 100vw;
-        background-color: #015958;
+        height: 90vw;
+        background-color: #015958c7;
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
@@ -485,11 +579,13 @@ footer{
     }
     .nav-list li{
         margin-left: 0;
+        margin-right: 30px;
         opacity: 0;
     }
     .mobile-menu{
         display: block;
     }
+
     @keyframes navLinkFade {
         from {
             opacity: 0;
