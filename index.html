@@ -20,73 +20,38 @@
 
 <body>
   <header>
-    <nav class="navbar bg-body-tertiary fixed-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">MP Serviços</font></font></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Alternar de navegação">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Fora da tela</font></font></h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Fechar"></button>
-          </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Lar</font></font></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Link</font></font></a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
-                  Suspenso
-                </font></font></a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li>
-                    <hr class="dropdown-divider">
-                  </li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-            </ul>
-            <form class="d-flex mt-3" role="search">
-              <input class="form-control me-2" type="search" placeholder="Procurar" aria-label="Procurar">
-              <button class="btn btn-outline-success" type="submit"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Procurar</font></font></button>
-            </form>
-          </div>
-        </div>
+    <nav>
+      <img id="visual" src="/img/m3.png" alt="">
+      <div class="mobile-menu">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+
       </div>
+      <ul class="nav-list">
+        <li><a href="/"></a>Home</li>
+        <li><a href="/"></a>Serviços</li>
+        <li><a href="/"></a>Contato</li>
+      </ul>
     </nav>
-   
     <section class="introduction">
 
-      <section id="sobre">
-        <div id="perfil">
-          <img src="img/perfil.png" alt="Foto dela">
-        </div>
+      <div id="sobre">
+        <img id="perfil" src="img/perfil.png" alt="Foto dela">
+
         <div id="sobre-perfil">
           <h1 class="efeito-escrevendo">Seja Bem Vindo!</h1>
           <p>Com um projeto pessoal inspirador, busco compartilhar não apenas meu conhecimento, mas também minha paixão
             por um ambiente laboral seguro. Oferecendo treinamentos fundamentados em experiências práticas e informações
             valiosas que acumulei ao longo do tempo, meu objetivo é capacitar equipes para um futuro mais seguro e
-            saudável. Junte-se a mim nessa jornada em prol da segurança, onde o conhecimento se torna a base para
-            ambientes de trabalho mais protegidos e produtivos.</p>
+            saudável. Junte-se a mim nessa jornada em prol da segurança!</p>
         </div>
-      </section>
+      </div>
+    </section>
   </header>
   <main>
     <section id="banner">
       
-    </section>
-
-
-    </section>
-
-
     <section id="servicos">
       <div id="apresentation">
         <h1>Nossos Serviços</h1>
@@ -234,6 +199,7 @@
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
   <script src="./main.js"></script>
+  <script src="mobile-navbar.js"></script>
 
 </body>
 

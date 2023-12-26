@@ -4,6 +4,13 @@
     box-sizing: border-box;
     font-family: 'Roboto Condensed', sans-serif;
 }
+a{
+    color: #fff;
+    text-decoration: none;
+}
+a:hover{
+    color: rgba(255, 255, 255, 0.418);
+}
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 
 :root{
@@ -33,6 +40,12 @@ header {
     width: 100%;
     
 }
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+}
 
 main{
     display: flex;
@@ -43,31 +56,41 @@ footer{
     width: 100%;
 }
 
-#logo{
-    width: 250px;
-    height: 10vh;
-    margin-left: -100px;
-    padding-right: 60px;
-
+#visual{
+    width: 120px;
 }
-
-.nav-link{
+.nav-list{
+    list-style: none;
     color: white;
-    font-size: 25px;
-    margin: 0 10px;
-}
-.nav-link:hover{
-    color: var(--marrom-forte);
-    text-shadow: 30px;
-    
-}
-.container-fluid{
     display: flex;
+    cursor: pointer;
 }
+
+.nav-list li {
+    letter-spacing: 3px;
+    margin-top: 5%;
+    margin-left: 32px;
+    font-size: larger;
+}
+
+.nav-list li:hover{
+    color: rgba(255, 255, 255, 0.458);
+}
+.mobile-menu{
+    cursor: pointer;
+    display: none;
+}
+.mobile-menu div{
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+}
+
 .introduction{
     height: 90vh;
-    width: 100%;
-    background-image: url("/img/fundo-introduction.jpg");
+    background-image: url("/img/f2.jpg");
+    background-size: cover;
     background-size: cover; /* Cobrir toda a área do elemento */
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -77,7 +100,6 @@ footer{
     margin:  auto;
     text-align: justify;
     font-size: large;
-    border-left: #452c00 15px 15px;
 
 }
 
@@ -95,6 +117,7 @@ footer{
 #perfil{
     width: 30%;
     margin: auto;
+    border-radius: 50%;
 }
 #perfil img{
     border-radius: 50%;
@@ -234,13 +257,13 @@ footer{
 
 }
 
-
 #list{
     font-size: 21px;
     margin-left: 30px;
     padding-bottom: 30px;
     border-bottom: var(--marrom-forte) 1px 1px;
 }
+
 #list li{
     font-size: 21px;padding: 5px;
 }
@@ -320,17 +343,63 @@ footer{
 
 /*----------------- Mobile Configurations ----------------*/
 
-@media only screen and (max-width: 600px){
-    header{
-        display: flex;
-    }
-    nav{
-        width: 50%;
-        display: flex;
-    }
-    #sobre{
-        flex-direction: column;
-        max-height: 70vh;
+@media only screen and (max-width: 700px){
+    body{
+        overflow-x: hidden;
     }
 
+    #sobre{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        height: 70vh;
+    }
+    #sobre-perfil{
+        flex-direction: row;
+        overflow: hidden;
+
+    }
+
+    #perfil{
+        width: 150px;
+        border-radius: 50%;
+    }
+
+
+
+
+    /* configuração do menu lateral */
+    .nav-list{
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 40vw;
+        height: 100vw;
+        background-color: #015958;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+    .nav-list.active{
+        transform: translateX(0%);
+    }
+    .nav-list li{
+        margin-left: 0;
+        opacity: 0;
+    }
+    .mobile-menu{
+        display: block;
+    }
+    @keyframes navLinkFade {
+        from {
+            opacity: 0;
+            transform: translateX(50px);
+        }
+
+        to{
+            opacity: 1;
+        }
+    }
 }
