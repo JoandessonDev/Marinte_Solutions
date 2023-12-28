@@ -2,8 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto Condensed', sans-serif;
-    overflow-x: hidden;
+    font-family: 'Roboto Condensed', sans-serif; 
 }
 
 a {
@@ -33,6 +32,7 @@ a:hover {
 
 body {
     display: flex;
+
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -64,8 +64,33 @@ footer {
     width: 100%;
 }
 
-#visual {
-    width: 120px;
+#visual{
+    width: 18vh;
+}
+#aba{
+    margin-left: -53%;
+    background-color: var(--verde-03);
+    width: 37vh;
+    height: 25vh;
+    position: absolute;
+    border-radius: 13%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+}
+#aba img{
+
+    width: 25vh;
+    margin-top: 7vh;
+}
+#test{
+    position: absolute;
+    width: 28vh;
+    margin-left: 43.5%;
+    margin-top: -42%;
+    opacity: 100%;
+
 }
 
 .nav-list {
@@ -113,12 +138,13 @@ footer {
     text-align: justify;
     font-size: large;
 
+
 }
 
 
 #sobre {
     width: 70%;
-    height: 400px;
+    height: 55vh;
     background-color: var(--branco-papel);
     display: flex;
     flex-direction: row;
@@ -131,19 +157,20 @@ footer {
     width: 30%;
     margin: auto;
     border-radius: 50%;
-}
-
-#perfil img {
-    border-radius: 50%;
-    width: 300px;
+    width: 45vh;
     margin-left: 3em;
     margin: auto;
+    transform: scaleX(-1);
 }
 
 #sobre-perfil {
     width: 50%;
     margin: auto;
-    background-image: url("/img/m5.png");
+
+
+}
+#sobre-perfil p{
+    font-size: 2.7vh;
 }
 
 
@@ -157,14 +184,11 @@ footer {
     }
 }
 
-.efeito-escrevendo {
-    overflow: hidden;
-    /* Para ocultar o texto extra enquanto escreve */
-    white-space: nowrap;
-    /* Para garantir que o texto não quebre para a próxima linha */
-    animation: escrevendo 3s steps(60) infinite alternate;
-    /* Ajuste a duração conforme necessário */
-    font-size: 50px;
+  .efeito-escrevendo {
+    overflow: hidden; /* Para ocultar o texto extra enquanto escreve */
+    white-space: nowrap; /* Para garantir que o texto não quebre para a próxima linha */
+    animation: escrevendo 3s steps(60) infinite alternate; /* Ajuste a duração conforme necessário */
+    font-size: 7.5vh;
     color: var(--marrom-forte);
 }
 
@@ -274,7 +298,17 @@ footer {
     color: white;
 }
 
-#apresentation2 h1 {
+#list{
+    font-size: larger;
+    margin-left: 30px;
+    padding-bottom: 30px;
+
+    
+}
+#list li{
+    padding-top: 15px;
+}
+#apresentation2 h1{
     margin-left: 30px;
 }
 
@@ -292,18 +326,6 @@ footer {
     position: absolute;
     width: 375px;
     margin-left: 48%;
-}
-
-#list {
-    font-size: 21px;
-    margin-left: 30px;
-    padding-bottom: 30px;
-    border-bottom: var(--marrom-forte) 1px 1px;
-}
-
-#list li {
-    font-size: 21px;
-    padding: 5px;
 }
 
 #contatos {
@@ -430,12 +452,14 @@ footer {
         overflow: hidden;
     }
 
-
-    #sobre {
+    header{
+        overflow: hidden;
+    }
+    #sobre{
         display: flex;
         flex-direction: column;
         width: 80%;
-        height: 65vh;
+        height: 66vh;
     }
 
     #sobre-perfil {
@@ -453,9 +477,10 @@ footer {
 
     #perfil {
         margin-top: 12%;
-        width: 140px;
+        width: 23vh;
         border-radius: 50%;
         margin-bottom: 0px;
+        transform: none;
     }
 
     .efeito-escrevendo {
@@ -557,7 +582,8 @@ footer {
         justify-content: space-around;
         transform: translateY(-120%);
         transition: transform 0.3s ease-in;
-        overflow-x: hidden;
+        overflow: hidden;
+ 
     }
 
     .nav-list.active {
