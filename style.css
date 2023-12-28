@@ -307,8 +307,8 @@ footer {
 }
 
 #contatos {
-    width: 80%;
-    background: linear-gradient(var(--verde01), var(--verde-02), var(--verde-03));
+
+    background: url('/img/fundo-introduction.jpg');
     display: grid;
     grid-template-columns: 26% 36% 36%;
     column-gap: 1%;
@@ -318,7 +318,7 @@ footer {
     font-size: large;
     color: white;
     border-radius: 2px;
-    padding: 2%;
+    padding: 50px 30px;
 }
 
 #contatos img {
@@ -366,7 +366,8 @@ footer {
 }
 
 #localizacao {
-    margin: 0.5em auto 0;
+    margin: 0.5em auto;
+    margin-left: 5em;
 }
 
 #localizacao p {
@@ -385,8 +386,10 @@ footer {
     margin-right: 1em;
 }
 
-.icons {
-    font-size: 3rem;
+.icons img{
+    width: 3.4em;
+    margin-top: 0.8em;
+    animation: both;
 }
 
 #localizacao a {
@@ -415,12 +418,21 @@ footer {
     transition-delay: 1s;
 }
 
+#formulario{
+    margin-left: 2em;
+    margin-right: 2em;
+}
 #formulario p {
     margin-top: 2em;
     font-size: 0.8em;
     margin-bottom: 0;
 }
+#chamado{
 
+    white-space: nowrap;
+    /* Para garantir que o texto não quebre para a próxima linha */
+    animation: escrevendo 5s steps(60);
+}
 
 /*----------------- Mobile Configurations ----------------*/
 
