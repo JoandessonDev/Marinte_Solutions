@@ -44,7 +44,7 @@ header {
     flex-direction: column;
     background-color: var(--verde-03);
     width: 100%;
-
+    overflow-x: hidden;
 }
 
 nav {
@@ -272,7 +272,6 @@ footer {
     margin-bottom: 40px;
     box-shadow: black 4px 4px;
     color: white;
-
 }
 
 #apresentation2 h1 {
@@ -319,7 +318,6 @@ footer {
     font-size: large;
     color: white;
     border-radius: 2px;
-    box-shadow: black 5px 10px 15px;
     padding: 2%;
 }
 
@@ -379,6 +377,8 @@ footer {
     display: flex;
     padding: 0;
     list-style: none;
+    align-items: left;
+    justify-content: none;
 }
 
 #localizacao li {
@@ -427,7 +427,7 @@ footer {
 @media only screen and (max-width: 700px) {
 
     body {
-        overflow-x: hidden;
+        overflow: hidden;
     }
 
 
@@ -549,13 +549,13 @@ footer {
         position: absolute;
         top: 8vh;
         right: 0;
-        width: 40vw;
+        width: 150px; /* Ajuste a largura conforme necessário */
         height: 90vw;
         background-color: #015958c7;
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
-        transform: translateX(100%);
+        transform: translateY(-120%);
         transition: transform 0.3s ease-in;
         overflow-x: hidden;
     }
@@ -586,10 +586,10 @@ footer {
     }
 
     #contatos {
-        width: 90%;
+        width: 100%;
         display: grid;
-        grid-template-columns: 60% 40%;
-        column-gap: 1%;
+        grid-template-columns: 40% 60%;
+        column-gap: 0%;
         row-gap: 0;
     }
 
@@ -602,38 +602,47 @@ footer {
     }
 
     #formulario {
-        display: fle;
-        text-align: center;
-        margin-top: 1em;
-        width: 100%;
+        margin: 0 auto;
+        width: 90%;
         grid-column: span 2;
         overflow: hidden;
         order: 3;
-    
     }
-    
+
     #formulario p {
         margin-top: 2em;
         font-size: 0.8em;
         margin-bottom: 0;
     }
 
-
     .imagem-container {
         display: flex;
         align-items: center;
         justify-content: center;
-        order: 2;
-    }
-
-    #localizacao {
-        margin: 1em 0;
-        max-width: 100%;
         order: 1;
     }
 
+    #localizacao {
+        margin: 1em;
+        max-width: 100%;
+        order: 2;
+    }
+
     #localizacao p {
-        margin: 0;
+        margin: 1em 0;
         font-size: 0.8em;
+    }
+
+    #localizacao h2 {
+        margin-bottom: 1em;
+        font-size: 1.5em;
+    }
+
+    #localizacao ul {
+        text-align: left;
+    }
+
+    #localizacao ul li {
+        margin: 0 4%;
     }
 }
