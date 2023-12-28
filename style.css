@@ -624,6 +624,7 @@ footer {
     }
 
     #contatos {
+        background: url('/img/fundo-introduction.jpg');
         width: 100%;
         display: grid;
         grid-template-columns: 40% 60%;
