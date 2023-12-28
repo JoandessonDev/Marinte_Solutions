@@ -101,6 +101,7 @@ footer{
     margin:  auto;
     text-align: justify;
     font-size: large;
+    color: #015958;
 
 }
 
@@ -238,6 +239,17 @@ footer{
     box-shadow: black 4px 4px ;
     color: white;
 
+}
+
+#list{
+    font-size: larger;
+    margin-left: 30px;
+    padding-bottom: 30px;
+
+    
+}
+#list li{
+    padding-top: 15px;
 }
 #apresentation2 h1{
     margin-left: 30px;
