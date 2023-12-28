@@ -61,7 +61,7 @@ footer{
     width: 18vh;
 }
 #aba{
-    margin-left: -53%;
+
     background-color: var(--verde-03);
     width: 37vh;
     height: 25vh;
@@ -90,6 +90,7 @@ footer{
     color: white;
     display: flex;
     cursor: pointer;
+    margin-left: 55vh;
 }
 
 .nav-list li {
