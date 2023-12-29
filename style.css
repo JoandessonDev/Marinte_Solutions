@@ -330,7 +330,7 @@ footer {
 
 #contatos {
 
-    background: url('/img/fundo-introduction.jpg');
+    background: linear-gradient(to bottom right, #008F8C,#0FC2C0);
     display: grid;
     grid-template-columns: 26% 36% 36%;
     column-gap: 1%;
