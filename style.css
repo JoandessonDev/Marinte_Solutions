@@ -476,14 +476,29 @@ footer{
 
 @media only screen and (max-width: 700px){
 
-    header{
-        overflow: hidden;
+
+    #aba{
+
+        background-color: var(--verde-03);
+        width: 23vh;
+        height: 19vh;
+        position: absolute;
+        border-radius: 13%;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    
+    }
+    #aba img{
+
+        width: 16vh;
+        margin-top: 6vh;
     }
     #sobre{
         display: flex;
         flex-direction: column;
         width: 80%;
-        height: 66vh;
+        height: 67vh;
     }
     #sobre-perfil{
         margin-top: 0px;
@@ -495,11 +510,11 @@ footer{
     }
 
     #sobre-perfil p {
-        font-size: 0.9rem;
+        font-size: 0.85rem;
     }
 
     #perfil{
-        margin-top: 12%;
+        margin-top: 5%;
         width: 23vh;
         border-radius: 50%;
         margin-bottom: 0px;
@@ -508,7 +523,7 @@ footer{
     
     .efeito-escrevendo{
         margin-top: 12%;
-        font-size: 25px;
+        font-size: 1em;
     }
 
     main {
