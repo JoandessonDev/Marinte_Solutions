@@ -126,7 +126,7 @@ footer {
 
 .introduction {
     height: 90vh;
-    background-image: url("/img/f2.jpg");
+    background-image: url("./img/f2.jpg");
     background-size: cover;
     background-size: cover;
     /* Cobrir toda a área do elemento */
