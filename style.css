@@ -51,7 +51,7 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 10vh;
+    height: 8.3vh;
 }
 
 main {
@@ -98,14 +98,15 @@ footer {
     color: white;
     display: flex;
     cursor: pointer;
-    margin-left: 55vh;
+    margin-left: 50vh;
+    border-radius: 10px;
 }
 
 .nav-list li {
     letter-spacing: 3px;
     margin-top: 5%;
     margin-left: 32px;
-    font-size: larger;
+    font-size: large;
 }
 
 .nav-list li:hover {
@@ -118,7 +119,7 @@ footer {
 }
 
 .mobile-menu div {
-    width: 32px;
+    width: 5vh;
     height: 2px;
     background: #fff;
     margin: 8px;
@@ -482,7 +483,9 @@ footer {
         width: 80%;
         height: 67vh;
     }
-
+    #introduction{
+        background: linear-gradient(to right bottom,#031A24,#028171);
+    }
     #sobre-perfil {
         margin-top: 0px;
         flex-direction: row;
@@ -493,7 +496,7 @@ footer {
     }
 
     #sobre-perfil p {
-        font-size: 0.85rem;
+        font-size: 1rem;
     }
 
     #perfil{
@@ -599,9 +602,9 @@ footer {
         position: absolute;
         top: 8vh;
         right: 0;
-        width: 150px; /* Ajuste a largura conforme necessário */
+        width: 17vh; /* Ajuste a largura conforme necessário */
         height: 90vw;
-        background-color: #015958c7;
+        background-color: #015958b6;
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
