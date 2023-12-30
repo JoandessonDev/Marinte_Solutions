@@ -370,18 +370,21 @@ footer {
     border: none;
 }
 
-#formulario button {
-    display: block;
-    padding: 0.2em 1em;
+#button-form{
+    width: 100%;
+    margin: auto;
+    background-color: #015958;
+    color: white;
+    letter-spacing: 2.3px;
+    padding: 2px;
+    border-radius: 7px;
     border: none;
-    cursor: pointer;
-    border: solid 1px rgba(0, 0, 0, 0.349);
-    border-radius: 0.5em;
 }
-
-#formulario button:hover {
-    background-color: #030303;
-    color: #fff;
+#button-form:hover{
+    margin: auto;
+    background: linear-gradient(to left,#2B7EFF,#EF42DE);
+    color: white;
+    letter-spacing: 2.3px;
 }
 
 #localizacao {
