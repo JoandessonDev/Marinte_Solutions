@@ -119,10 +119,11 @@ footer {
 }
 
 .mobile-menu div {
-    width: 5vh;
+    width: 4.1vh;
     height: 2px;
     background: #fff;
     margin: 8px;
+    margin-left: 15vh;
 }
 
 .introduction {
