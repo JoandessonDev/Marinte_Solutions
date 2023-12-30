@@ -464,8 +464,8 @@ footer {
     #aba{
 
         background-color: var(--verde-03);
-        width: 23vh;
-        height: 19vh;
+        width: 22vh;
+        height: 17.3vh;
         position: absolute;
         border-radius: 13%;
         align-items: center;
@@ -475,7 +475,7 @@ footer {
     }
     #aba img{
 
-        width: 16vh;
+        width: 14.3vh;
         margin-top: 6vh;
     }
     #sobre{
