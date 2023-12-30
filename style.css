@@ -68,7 +68,7 @@ footer {
     width: 18vh;
 }
 #aba{
-    margin-left: -53%;
+
     background-color: var(--verde-03);
     width: 37vh;
     height: 25vh;
@@ -98,6 +98,7 @@ footer {
     color: white;
     display: flex;
     cursor: pointer;
+    margin-left: 55vh;
 }
 
 .nav-list li {
@@ -260,12 +261,8 @@ footer {
 
 }
 
-.column-img {
-    margin: 20px auto;
 
-}
-
-.subtitulo {
+.subtitulo{
     color: #452C00;
     font-weight: 600;
     text-align: center;
@@ -459,19 +456,28 @@ footer {
 /*----------------- Mobile Configurations ----------------*/
 
 @media only screen and (max-width: 700px) {
+    #aba{
 
-    body {
-        overflow: hidden;
+        background-color: var(--verde-03);
+        width: 23vh;
+        height: 19vh;
+        position: absolute;
+        border-radius: 13%;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    
     }
+    #aba img{
 
-    header{
-        overflow: hidden;
+        width: 16vh;
+        margin-top: 6vh;
     }
     #sobre{
         display: flex;
         flex-direction: column;
         width: 80%;
-        height: 66vh;
+        height: 67vh;
     }
 
     #sobre-perfil {
@@ -484,11 +490,11 @@ footer {
     }
 
     #sobre-perfil p {
-        font-size: 0.9rem;
+        font-size: 0.85rem;
     }
 
-    #perfil {
-        margin-top: 12%;
+    #perfil{
+        margin-top: 5%;
         width: 23vh;
         border-radius: 50%;
         margin-bottom: 0px;
@@ -497,7 +503,7 @@ footer {
 
     .efeito-escrevendo {
         margin-top: 12%;
-        font-size: 25px;
+        font-size: 1em;
     }
 
     main {
