@@ -529,6 +529,7 @@ footer {
         box-shadow: var(--marfim-escuro) 6px 6px;
         font-size: small;
         text-align: justify;
+        text-indent: 30px;
 
     }
 
@@ -557,6 +558,7 @@ footer {
     #vantagens {
         margin: auto;
         padding-top: 0;
+        padding-bottom: 5vh;
     }
 
     #p-vantagens {
@@ -573,17 +575,19 @@ footer {
         width: 90%;
         margin: 0;
         padding: 5%;
+        padding-top: 0;
     }
 
     #list li {
         font-size: small;
         margin: 0;
+        padding-top: 0.8em;
     }
 
     #img-pq {
-        margin-top: 30%;
-        margin-left: 50%;
-        width: 37%;
+        margin-top: 15vh;
+        margin-left: 26vh;
+        width: 20vh;
     }
 
 
@@ -630,7 +634,7 @@ footer {
     }
 
     #contatos {
-        background: url('/img/fundo-introduction.jpg');
+        background: linear-gradient(to bottom right, #008F8C,#0FC2C0);
         width: 100%;
         display: grid;
         grid-template-columns: 40% 60%;
@@ -645,9 +649,14 @@ footer {
     .icons {
         font-size: 2rem;
     }
+    .icons img{
+        width: 7em;
+        margin-top: 0px;
+        animation: both;
+    }
 
     #formulario {
-        margin: 0 auto;
+        margin: 2em auto;
         width: 90%;
         grid-column: span 2;
         overflow: hidden;
@@ -662,20 +671,23 @@ footer {
 
     .imagem-container {
         display: flex;
-        align-items: center;
-        justify-content: center;
+        align-items: left;
+        justify-content: left;
+        height: 20vh;
+        margin-top: 8vh;
         order: 1;
     }
 
     #localizacao {
-        margin: 1em;
-        max-width: 100%;
         order: 2;
+        margin-left: 3vh;
     }
 
+    #chamado{
+        margin-bottom: 0;
+    }
     #localizacao p {
-        margin: 1em 0;
-        font-size: 0.8em;
+        font-size: 0.7em;
     }
 
     #localizacao h2 {
@@ -689,5 +701,19 @@ footer {
 
     #localizacao ul li {
         margin: 0 4%;
+    }
+    #button-form{
+        width: 100%;
+        margin: auto;
+        background-color: #015958;
+        color: white;
+        letter-spacing: 2.3px;
+    }
+    #button-form:hover{
+        width: 100%;
+        margin: auto;
+        background: linear-gradient(to left,#2B7EFF,#EF42DE);
+        color: white;
+        letter-spacing: 2.3px;
     }
 }
