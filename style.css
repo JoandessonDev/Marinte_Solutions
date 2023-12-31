@@ -706,12 +706,23 @@ footer {
         order: 2;
         margin-left: 3vh;
     }
+    #msg-location{
+
+        margin-bottom: 5px;
+    }
+    #location-icon{
+        width: 3vh;
+        margin-right:0.2em;
+        margin-bottom:2vh;
+        margin-top: 2vh;
+    }
 
     #chamado{
         margin-bottom: 0;
     }
     #localizacao p {
         font-size: 0.7em;
+        margin-top: 3px;
     }
 
     #localizacao h2 {
