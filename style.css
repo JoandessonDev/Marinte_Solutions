@@ -277,8 +277,11 @@ footer {
 }
 
 .paragrafo {
-    font-size: 21px;
+    font-size: large;
     text-align: justify;
+}
+#container p{
+    font-size: 50px;
 }
 
 #carousel {
@@ -402,6 +405,7 @@ footer {
 
 #localizacao p {
     margin: 2em 0 0;
+    margin-top: 10px;
 }
 
 #localizacao ul {
@@ -425,6 +429,15 @@ footer {
 #localizacao a {
     color: white;
     text-decoration: none;
+}
+#location-icon{
+    width: 6vh;
+    margin-right:0.2em;
+    margin-bottom:1vh;
+    margin-top: 2vh;
+}
+#msg-location{
+    margin-top: 5vh;
 }
 
 /* animação da sessão contatos */
@@ -613,6 +626,7 @@ footer {
         margin-left: 26vh;
         width: 20vh;
     }
+
 
 
     /* configuração do menu lateral */
