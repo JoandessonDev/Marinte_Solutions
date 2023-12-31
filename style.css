@@ -189,12 +189,6 @@ footer{
     padding-bottom: 5%;
 }
 
-#scope-service img{
-        width: 275px;
-        height: 375px;
-        border-radius: 15px;
-
-}
 #apresentation{
     background-color: var(--verde-03);
     width: 60%;
@@ -232,10 +226,23 @@ footer{
     flex-direction: column;
     justify-content: center;
     text-align: justify;
-    max-width: 375px;
+    max-width: 50vh;
     background-color: var(--branco-papel);
     margin: auto;
+    padding: 0vh 10vh;
 
+}
+.column img{
+    margin-top: 6vh;
+    margin-bottom: 4vh;
+    width: 45vh;
+}
+.column p{
+    margin-top: 3.2vh;
+    margin-bottom: 4vh;
+}
+#p-especial{
+    margin-top: 1vh;
 }
 
 
@@ -531,8 +538,12 @@ footer{
     }
 
     .column{
+        display: flex;
 
-        margin-bottom: 10%;
+    }
+
+    .img-service img{
+        max-width: 100vh;
     }
 
     #servicos {
@@ -555,17 +566,24 @@ footer{
         font-size: 1rem;    
     }
 
-    .service-img{
-        width: 70%;
-        margin-bottom: 5%;
-    }
-
     .container p{
         width: 90%;
         font-size: small;
     }
     .subtitulo{
         font-size: large;
+    }
+
+    .column img{
+        margin-top: 6vh;
+        margin-bottom: 4vh;
+        width: 30vh;
+    }
+    
+    .column p{
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+        font-size: medium;
     }
 
     #carousel {
