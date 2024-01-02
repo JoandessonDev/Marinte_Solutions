@@ -231,7 +231,7 @@ footer {
 }
 
 #intro-services {
-    width: 65%;
+    width: 145vh;
     background-color: white;
     padding: 30px;
     margin-left: 5%;
@@ -564,7 +564,6 @@ footer {
         box-shadow: var(--marfim-escuro) 6px 6px;
         font-size: small;
         text-align: justify;
-        text-indent: 30px;
 
     }
 
