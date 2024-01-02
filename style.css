@@ -506,7 +506,7 @@ footer {
         display: flex;
         flex-direction: column;
         width: 80%;
-        height: 67vh;
+        height: 72vh;
     }
     #introduction{
         background: linear-gradient(to right bottom,#031A24,#028171);
@@ -679,6 +679,7 @@ footer {
     #contatos {
         background: linear-gradient(to bottom right, #008F8C,#0FC2C0);
         width: 100%;
+        padding: 0 2vh;
         display: grid;
         grid-template-columns: 40% 60%;
         column-gap: 0%;
@@ -755,6 +756,10 @@ footer {
 
     #localizacao ul li {
         margin: 0 4%;
+    }
+
+    #list-icons img{
+        max-width: 120%;
     }
     #button-form{
         width: 100%;
