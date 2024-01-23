@@ -22,7 +22,8 @@
   
   //Emails para quem será enviado o formulário
   $destino = "alvesgabryel086@gmail.com";
-  $assunto = "Contato pelo Site";
+  $assunto = "Contato pelo Site - $nome";
+
 
   //Este sempre deverá existir para garantir a exibição correta dos caracteres
   $headers  = "MIME-Version: 1.0\n";
@@ -32,5 +33,5 @@
   //Enviar
   mail($destino, $assunto, $arquivo, $headers);
   
-  echo "<meta http-equiv='refresh' content='10;URL=../index.html'>";
+  echo "<meta http-equiv='refresh' content='10;URL=http://mpservicos.com'>";
 ?>
