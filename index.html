@@ -179,13 +179,18 @@
         <img id="contatos-img" src="./CSS/img/avatar-ela-cotact.png" alt="ela">
       </div>
       <div id="formulario" class="animar box">
-        <form action="https://formsubmit.co/marinete.cruztst@gmail.com" method="POST">
+
+        <form action="./php/enviar-email.php" method="POST">
+
           <input name="name" type="text" placeholder="Seu nome" required />
           <input name="email" type="email" placeholder="Seu email" required />
           <input name="tel" type="tel" id="telefone" placeholder="Seu telefone (opcional)" />
           <textarea name="message" placeholder="Sua mensagem" required rows="4" cols="30"></textarea>
+          
           <button id="button-form" type="submit"><strong>Enviar</strong></button>
+          
         </form>
+
         <p>&copy; MP Serviços - Todos os direitos reservados - 2023</p>
       </div>
       <div id="localizacao" class="animar box">
