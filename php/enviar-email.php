@@ -21,7 +21,7 @@
   ";
   
   //Emails para quem será enviado o formulário
-  $destino = "alvesgabryel086@gmail.com";
+  $destino = "mpservicos47@gmail.com";
   $assunto = "Contato pelo Site - $nome";
 
 
